@@ -21,6 +21,25 @@ public class Entiers {
         return _size;
     }
 
+    public void set_elt(int i, int elt) throws ArrayIndexOutOfBoundsException {
+        if (i<0 || i>_size) throw new ArrayIndexOutOfBoundsException();
+        _tab[i] = elt;
+    }
+
+    public void set_count(int i) throws ArrayIndexOutOfBoundsException{
+        if (i<0 || i>_size) throw new ArrayIndexOutOfBoundsException();
+        _count = i;
+    }
+
+    public int get_count() {
+        return _count;
+    }
+
+    public int get_elt(int i) throws ArrayIndexOutOfBoundsException {
+        if (i<0 || i>_size) throw new ArrayIndexOutOfBoundsException();
+        return _tab[i];
+    }
+
     /**
      *
      * @return true si le tablea est vide false si le tableau est non vide
@@ -56,15 +75,16 @@ public class Entiers {
 
             if(!exist) {
 
-                for(i = 0 ; i < _count ; i++) {
+                i = 0;
+                while (i < _count && exist == false){
                     if(elt < _tab[i]) {
-                        for(int j = _count ; j >= i ; j--)
+                        for(int j = _count ; j > i ; j--)
                             _tab[j] = _tab[j-1];
                         _tab[i] = elt;
                         _count++;
                         exist = true;
                     }
-
+                i++;
                 }
                 if(!exist){
                     _tab[_count] = elt;

@@ -90,16 +90,25 @@ public class Main {
         }
         else if (choice.equals("D")) {
             Entiers e = new Entiers(10);
+            e.add(43);
+            e.add(678);
+            e.add(1);
+            System.out.println("e = " + e);
+
 
             try {
                 Constructor<Entiers> co = Entiers.class.getConstructor(int.class);
                 Entiers e1 = co.newInstance(e.get_size());
+                e1.set_count(e.get_count());
+
+                for (int i = 0 ; i < e.get_size() ; i++){
+                    e1.set_elt(i, e.get_elt(i));
+                }
 
 
                 System.out.println("e1 = " + e1);
-            }
-            catch (Exception e1) {
-                System.out.println("e1 = " + e1);
+            } catch (Exception except) {
+                System.out.println("except = " + except);
             }
         }
     }
