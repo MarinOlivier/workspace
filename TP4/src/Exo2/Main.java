@@ -15,7 +15,7 @@ public class Main {
 
         try {
 
-            Integer obj = new Integer(56);
+            Integer obj = new Integer(1);
 
             Comparable<?> [] t = new Comparable<?> [SIZE];
 
