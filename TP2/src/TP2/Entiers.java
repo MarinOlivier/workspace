@@ -1,10 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
 import java.util.Arrays;
 
 /**
  * Created by olivier on 06/10/2015.
  */
+@Generated(value = "", date = "2002")
 public class Entiers extends Structure implements Affichable, Compactable {
 
     private int _tab[];

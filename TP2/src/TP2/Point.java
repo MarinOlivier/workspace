@@ -1,8 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
+
 /**
  * Created by olivier on 02/10/15.
  */
+
+@Generated(value = "", date = "2010")
 public class Point implements Cloneable {
     private int _x;
     private int _y;

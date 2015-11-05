@@ -1,8 +1,11 @@
 package TP2;
 
+import javax.annotation.Generated;
+
 /**
  * Created by olivier on 04/10/2015.
  */
+@Generated(value = "", date = "2003")
 abstract public class Forme implements Affichable, Cloneable {
 
     private Point _origin;

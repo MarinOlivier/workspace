@@ -1,8 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
+
 /**
  * Created by olivier on 09/10/2015.
  */
+
+@Generated(value = "", date = "2015")
 public class Main_Exo5 {
     public static void main(String[] args) {
         Point p1 = new Point(1, 2);

@@ -1,11 +1,14 @@
 package TP2;
 
+import javax.annotation.Generated;
 import java.util.Arrays;
 import java.util.Comparator;
 
 /**
  * Created by olivier on 04/10/2015.
  */
+
+@Generated(value = "", date = "2004")
 public class Image extends Forme implements Affichable, Compactable, Comparable<Image>, Comparator<Image> {
 
     //private Point _p;

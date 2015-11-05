@@ -1,8 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
+
 /**
  * Created by olivier on 06/10/2015.
  */
+
+@Generated(value = "", date = "2004")
 public class Liste extends Structure implements Affichable, Compactable, Cloneable {
     private Maillon _top;
 
@@ -95,7 +99,7 @@ public class Liste extends Structure implements Affichable, Compactable, Cloneab
 
 
 
-
+@Generated(value = "", date = "2004")
 class Maillon {
     private int _val ;
     private Maillon _suiv ;

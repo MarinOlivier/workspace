@@ -1,8 +1,11 @@
 package TP2;
 
+import javax.annotation.Generated;
+
 /**
  * Created by olivier on 09/10/2015.
  */
+@Generated(value = "", date = "2010")
 public class Main_Exo8 {
     public static void main(String[] args) {
         /*--------------------- Exo 8 ----------------------------------------*/

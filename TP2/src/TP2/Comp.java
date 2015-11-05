@@ -1,10 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
 import java.util.Comparator;
 
 /**
  * Created by olivier on 12/10/2015.
  */
+@Generated(value = "", date = "2001")
 public class Comp implements Comparator<Image>{
 
     public int compare(Image I1, Image I2) {

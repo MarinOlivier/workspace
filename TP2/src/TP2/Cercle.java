@@ -1,8 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
+
 /**
  * Created by olivier on 02/10/15.
  */
+
+@Generated(value = "" ,date = "2000")
 public class Cercle extends Forme implements Affichable {
 
     //private Point _a;

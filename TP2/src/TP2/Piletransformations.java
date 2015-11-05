@@ -1,9 +1,12 @@
 package TP2;
 
+import javax.annotation.Generated;
 import java.util.Arrays;
 /**
  * Created by olivier on 02/10/15.
  */
+
+@Generated(value = "", date = "2009")
 public class Piletransformations {
 
     private Point _t[];
